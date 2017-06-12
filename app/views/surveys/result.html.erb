@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+  </head>
+  <body>
+    <% if flash[:success] %>
+  		<div id="success">
+  			<p><%= flash[:success] %></p>
+		</div>
+	<% end %>
+  <%= @result['name'] %>
+  <%= @result['location'] %>
+  <%= @result['language'] %>
+  <%= @result['comment'] %>
+
+  </body>
+</html>
